@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <title>Страница</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <p class="text">
+            Did:
+        </p>
+        <div class="header_item">
+            <a href="#popup_4" class="link_popup">
+                <button class="spisok_button">
+                    <p>
+                        Загрузить документ
+                    </p>
+                </button>
+            </a>
+            <button id="exit" class="spisok_button">
+                <p>
+                    Выход
+                </p>
+            </button>
+        </div>
+    </header>
+    <div class="border"></div>
+    <div class="page">
+        <div class="content">
+            <table border="1" class="table">
+                <tr>
+                    <th class="text">
+                        №
+                    </th>
+                    <th class="text">
+                        Тип:
+                    </th>
+                    <th class="text">
+                        Название документа:
+                    </th>
+                    <th class="text">
+                        Кнопка
+                    </th>
+                </tr>
+                <tr>
+                    <th class="text">
+                        1
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+                        <a href="#popup" class="link_popup">
+                            <button class="spisok_button">
+                                <p>
+                                    Открыть
+                                </p>
+                            </button>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="text">
+                        2
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+                    </th>
+                    <th>
+                        <a href="#popup" class="link_popup">
+                            <button class="spisok_button">
+                                <p>
+                                    Открыть
+                                </p>
+                            </button>
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="text">
+                        3
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+
+                    </th>
+                    <th>
+                        <a href="#popup" class="link_popup">
+                            <button class="spisok_button">
+                                <p>
+                                    Открыть
+                                </p>
+                            </button>
+                        </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">
+                    <h3 class="title_h3">
+                        X
+                    </h3>
+                </a>
+                <div class="popup__title">
+                    <h3 class="title_h3">
+                        Название документа:
+                    </h3>
+                    <h3 class="title_h3">
+                        Тип документа:
+                    </h3>
+                </div>
+                <div class="popup__buttons">
+                    <button class="spisok_button">
+                        <p>
+                            Скачать
+                        </p>
+                    </button>
+                    <a href="#popup_2" class="link_popup">
+                        <button class="spisok_button">
+                            <p>
+                                Удалить
+                            </p>
+                        </button>
+                    </a>
+                    <a href="#popup_3" class="link_popup">
+                        <button class="spisok_button">
+                            <p>
+                                Изменить
+                            </p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_2" class="popup_2">
+        <div class="popup__body_2">
+            <div class="popup__content_2">
+                <a href="#" class="popup__close">
+                    <h3 class="title_h3">
+                        X
+                    </h3>
+                </a>
+                <div class="popup__title">
+                    <h3 class="title_h3">
+                        Вы действительно хотите удалить документ?
+                    </h3>
+                </div>
+                <div class="popup__buttons">
+                    <button class="spisok_button">
+                        <p>
+                            Да
+                        </p>
+                    </button>
+                    <a href="#">
+                        <button class="spisok_button">
+                            <p>
+                                Нет
+                            </p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_3" class="popup_3">
+        <div class="popup__body_3">
+            <div class="popup__content_3">
+                <a href="#" class="popup__close">
+                    <h3 class="title_h3">
+                        X
+                    </h3>
+                </a>
+                <div class="popup__title">
+                    <h3 class="title_h3">
+                        Выберите тип документа:
+                    </h3>
+                    <select class="popup_3_select">
+                        <option>Тип</option>
+                        <option>Тип</option>
+                        <option>Тип</option>
+                        <option>Тип</option>
+                    </select>
+                </div>
+                <div class="popup_3_buttons">
+                    <button class="spisok_button">
+                        <p>
+                            Подтвердить
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_4" class="popup_4">
+        <div class="popup__body_4">
+            <div class="popup__content_4">
+                <a href="#" class="popup__close">
+                    <h3 class="title_h3">
+                        X
+                    </h3>
+                </a>
+                <div class="popup__title">
+                    <h3 class="title_h3">
+                        Выберите тип документа:
+                    </h3>
+                    <select class="popup_3_select">
+                        <option>Тип</option>
+                        <option>Тип</option>
+                        <option>Тип</option>
+                        <option>Тип</option>
+                    </select>
+                </div>
+                <div class="popup_4_buttons">
+                    <button class="spisok_button">
+                        <p>
+                            Загрузить документ
+                        </p>
+                    </button>
+                    <button class="spisok_button">
+                        <p>
+                            Выбрать файл
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="../index.js"></script>
+<script>
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+    var token = getCookie("token")
+    console.log(token)
+    if(token != undefined) {
+        window.addEventListener("load", async () => {
+            var res = await fetch("http://127.0.0.1:3000", {
+                method: "POST",
+                headers: {
+                    "Authorization": token
+                }
+            })
+            if(!res.ok) {
+                console.log(res.status)
+                document.location.href = "http://127.0.0.1:3000"
+            }
+        })
+    } else {
+         document.location.href = "http://127.0.0.1:3000"
+    }    
+</script>
+
+</html>

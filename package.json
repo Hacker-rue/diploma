@@ -1,0 +1,27 @@
+{
+  "name": "document_management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eversdk/appkit": "^0.3.8",
+    "@eversdk/core": "^1.42.1",
+    "@eversdk/lib-node": "^1.42.1",
+    "connect-redis": "^6.1.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.1.0",
+    "everscale-did-sdk-radiance": "^2.0.4",
+    "everscale-inpage-provider": "^0.3.61",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "redis": "^4.1.0"
+  }
+}

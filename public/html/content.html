@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../css/content.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>
+        Главная
+    </title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="text">
+            
+        </p>
+        <div class="header_item">
+            <a>
+                <button id="Connect" class="spisok_button">
+                    <p>
+                        Подключить кошелек
+                    </p>
+                </button>
+            </a>
+        </div>
+    </header>
+    <div class="border"></div>
+</body>
+<script type="module" src="../content.js"></script>
+<script type="module">
+    import { disconnect } from "http://127.0.0.1:3000/src/everRpcProvider.js"
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+    var token = getCookie("token")
+    console.log(token)
+    if(token != undefined) {
+        window.addEventListener("load", async () => {
+            var res = await fetch("http://127.0.0.1:3000/", {
+                method: "POST",
+                headers: {
+                    "Authorization": token
+                }
+            })
+            console.log(res.status)
+            if(!res.ok) {
+                document.cookie = "token=;max-age=-1"
+                disconnect()
+            }
+            console.log(1)
+            document.location.href = "http://127.0.0.1:3000/main"
+        })
+    }
+</script>
+</html>
